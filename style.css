@@ -1,0 +1,86 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    background-color: #f2f2f2;
+}
+.site-header, .site-footer{
+    background-color: #196719;
+    color: white;
+    padding: 3px 0;
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation li{
+    padding: 0 15px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px; 
+    padding: 0 20px; 
+    margin: auto;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+    border-radius: 50%;
+}
+
+.image::after {
+    content: "";
+    width: 350px;
+    display: table;
+    clear: both;
+}
+
+.project-grid{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.project-image{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item{
+    background-color: white;
+    box-shadow: 0 0 10px #b3b0b0;
+    border-radius: 5px;
+}
