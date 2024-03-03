@@ -1,0 +1,20 @@
+
+.site-header, .site-footer{
+    background-color: #196719;
+    color: white;
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation li{
+    padding: 0 15px;
+}
