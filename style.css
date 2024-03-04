@@ -1,86 +1,98 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans'
+}
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333333;
     background-color: #f2f2f2;
-}
-.site-header, .site-footer{
-    background-color: #196719;
-    color: white;
-    padding: 3px 0;
+    margin: 0;
+    padding: 0;
 }
 
-.main-navigation ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+main{
+    margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
+    padding: 1rem;
+    max-width: 1200px; 
 }
 
-.main-navigation a{
-    color: white;
-    text-decoration: none;
+/*CSS nav bar*/
+.navbar{
+    width: 5rem;
+    height: 100vh; /*Viewport Height, reponsive design*/
+    position: fixed;
+    background-color: #114232;
+    transition: width 200ms ease;
 }
 
-.main-navigation li{
-    padding: 0 15px;
-}
-
-*{
+.navbar-nav{
+    list-style:none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container{
-    max-width: 1200px; 
-    padding: 0 20px; 
-    margin: auto;
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color:#DCE0D8;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms;
+}
+
+.link-text {
+    display: none;
+}
+  
+.nav-link svg {
+    width: 2.5rem;
+    margin: 0 1.5rem;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: #677779;
+    color: #ececec;
+}
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+.fa-primary{
+    color: #FCDC2A;
+}
+
+.fa-secondary{
+    color: #FCDC2A;
+}
+
+.fa-primary, .fa-secondary{
+    transition: 600ms;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.sobreMim{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .image{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-
-    width: 100%;
-    max-width: 100px;
-    height: 100px;
+    width: 250px;
+    max-width: 500px;
+    height: 250px;
     object-fit: cover;
-    float: left;
     border-radius: 50%;
-}
-
-.image::after {
-    content: "";
-    width: 350px;
-    display: table;
-    clear: both;
-}
-
-.project-grid{
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.project-image{
-    object-fit: cover;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 100px;
-    height: 100px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.project-item{
-    background-color: white;
-    box-shadow: 0 0 10px #b3b0b0;
-    border-radius: 5px;
 }
