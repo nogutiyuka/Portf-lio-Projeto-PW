@@ -81,7 +81,7 @@ main{
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
-.sobreMim{
+section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -95,4 +95,8 @@ main{
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+p {
+    text-indent: 3em;
 }
