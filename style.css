@@ -17,7 +17,7 @@ body{
 main{
     margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
     padding-left: 1rem;
-    max-width: 1200px; 
+    max-width: 100%; 
 }
 
 /*CSS nav bar*/
@@ -61,6 +61,7 @@ main{
     filter: grayscale(0%) opacity(1);
     background: #677779;
     color: #ececec;
+    width: 16rem;
 }
 
 .navbar:hover{
