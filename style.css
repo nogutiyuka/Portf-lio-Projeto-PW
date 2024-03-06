@@ -140,6 +140,7 @@ p {
   
     .navbar-nav {
       flex-direction: row;
+      justify-content: center;
     }
   
     .nav-link {
