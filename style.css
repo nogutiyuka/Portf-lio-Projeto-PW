@@ -149,13 +149,6 @@ p {
     main {
       margin: 0;
     }
-
-    .nav-link:hover{
-        filter: grayscale(0%) opacity(1);
-        background: #677779;
-        color: #ececec;
-        width: 16rem;
-    }
   }
 
 /*Web*/
@@ -172,5 +165,12 @@ p {
   
     .navbar:hover .link-text {
       display: inline;
+    }
+
+    .nav-link:hover{
+        filter: grayscale(0%) opacity(1);
+        background: #677779;
+        color: #ececec;
+        width: 16rem;
     }
   }
