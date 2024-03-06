@@ -17,13 +17,10 @@ body{
 main{
     margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
     padding-left: 1rem;
-    max-width: 100%; 
 }
 
 /*CSS nav bar*/
 .navbar{
-    width: 5rem;
-    height: 100vh; /*Viewport Height, reponsive design*/
     position: fixed;
     background-color: #114232;
     transition: width 200ms ease;
@@ -64,13 +61,7 @@ main{
     width: 16rem;
 }
 
-.navbar:hover{
-    width: 16rem;
-}
 
-.navbar:hover .link-text{
-    display: block;
-}
 
 .fa-primary{
     color: #FCDC2A;
@@ -87,7 +78,7 @@ main{
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -147,3 +138,40 @@ p {
     padding: 0;
 }
 
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0; /*Placing the navbar on the bottom of the page*/
+      width: 100vw; /*You swap the height and the width and the height*/
+      height: 5rem;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+
+/*Web*/
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  }
