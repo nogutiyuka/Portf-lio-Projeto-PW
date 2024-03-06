@@ -136,6 +136,7 @@ p {
       bottom: 0; /*Placing the navbar on the bottom of the page*/
       width: 100vw; /*You swap the height and the width and the height*/
       height: 5rem;
+      position: fixed;
     }
   
     .navbar-nav {
