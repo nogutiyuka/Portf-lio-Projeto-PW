@@ -129,14 +129,14 @@ p {
         height: 100vh;
         background-color: #EADFB4;
         display: inline block;
+        padding:1rem;
     }
     
     .projects{
         width: 100vw;
         height: 100vh;
         background-color: #b4c5d3;
-        margin: none;
-        padding: none;
+        padding:1rem;
         display: inline block;
     }
     
@@ -144,7 +144,8 @@ p {
         width: 100vw;
         height: 100vh;
         background-color: #8d9fa8;
-        display: inline block;
+        display: block;
+        padding:1rem;
     }
     
     .social{
@@ -152,6 +153,7 @@ p {
         height: 100vh;
         background-color: #f6b78d;
         display: inline block;
+        padding:1rem;
     }
   }
 
