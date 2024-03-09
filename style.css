@@ -96,6 +96,14 @@ p {
 
 /*Mobile*/
 @media only screen and (max-width: 600px) {
+    main{
+        margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
+        padding-left: 1rem;
+        max-width: 100vw;
+        max-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .navbar {
       bottom: 0; /*Placing the navbar on the bottom of the page*/
       width: 100vh; /*You swap the height and the width and the height*/
@@ -144,7 +152,7 @@ p {
         width: 100vw;
         height: 100vh;
         background-color: #8d9fa8;
-        display: block;
+        display: inline block;
         padding:1rem;
     }
     
