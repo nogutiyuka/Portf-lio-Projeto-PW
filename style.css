@@ -99,6 +99,7 @@ p {
     main{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
     .navbar {
       bottom: 0; /*Placing the navbar on the bottom of the page*/
