@@ -98,7 +98,7 @@ p {
 @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0; /*Placing the navbar on the bottom of the page*/
-      width: 100vw; /*You swap the height and the width and the height*/
+      width: 100vh; /*You swap the height and the width and the height*/
       height: 5rem;
       position: fixed;
     }
