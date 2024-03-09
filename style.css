@@ -113,6 +113,10 @@ p {
       flex-direction: row;
       justify-content: center;
     }
+
+    .navbar-nav{
+        display: none;
+    }
   
     .nav-link {
       justify-content: center;
@@ -170,7 +174,10 @@ p {
       width: 5rem;
       height: 100vh;
     }
-  
+    .navbar-nav{
+        display: flex;
+    }
+    
     .navbar:hover {
       width: 16rem;
     }
