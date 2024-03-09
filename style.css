@@ -100,10 +100,6 @@ p {
 /*Mobile*/
 @media only screen and (max-width: 600px) {
     main{
-        margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
-        padding-left: 1rem;
-        max-width: 100vw;
-        max-height: 100vh;
         display: flex;
         flex-wrap: wrap;
     }
