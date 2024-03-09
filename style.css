@@ -112,10 +112,7 @@ p {
     .navbar-nav {
       flex-direction: row;
       justify-content: center;
-    }
-
-    .navbar-nav{
-        display: none;
+      display:block;
     }
   
     .nav-link {
