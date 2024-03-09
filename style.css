@@ -18,6 +18,7 @@ main{
     margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
     padding-left: 1rem;
     max-width: 100vw;
+    max-height: 100vh;
 }
 
 /*CSS nav bar*/
@@ -69,20 +70,11 @@ main{
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
-section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .image{
     width: 250px;
     max-width: 500px;
     height: 250px;
     object-fit: cover;
-
 }
 
 .about-me .image{
@@ -92,34 +84,6 @@ section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
 
 p {
     text-indent: 3em;
-}
-
-.about-me{
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
-    width: 100%;
-    height: 100vh;
-    background-color: #EADFB4;
-    margin-left: -16px;
-}
-
-.projects{
-    background-color: #b4c5d3;
-    margin-left: -16px;
-    margin: none;
-    padding: none;
-}
-
-.education{
-    background-color: #8d9fa8;
-    margin-left: -16px;
-}
-
-.social{
-    background-color: #f6b78d;
-    margin-left: -16px;
 }
 
 *, *::before, *::after {
@@ -151,6 +115,44 @@ p {
     main {
       margin: 0;
     }
+    section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me{
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+        width: 100vw;
+        height: 100vh;
+        background-color: #EADFB4;
+        display: inline block;
+    }
+    
+    .projects{
+        width: 100vw;
+        height: 100vh;
+        background-color: #b4c5d3;
+        margin: none;
+        padding: none;
+        display: inline block;
+    }
+    
+    .education{
+        width: 100vw;
+        height: 100vh;
+        background-color: #8d9fa8;
+        display: inline block;
+    }
+    
+    .social{
+        width: 100vw;
+        height: 100vh;
+        background-color: #f6b78d;
+        display: inline block;
+    }
   }
 
 /*Web*/
@@ -175,4 +177,46 @@ p {
         color: #ececec;
         width: 16rem;
     }
+    section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display:  block;
+    }
+    .about-me{
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+        width: 100%;
+        height: 100vh;
+        background-color: #EADFB4;
+        margin-left: -16px;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .projects{
+        background-color: #b4c5d3;
+        margin-left: -16px;
+        padding-bottom: 20rem;
+        padding-top: 1rem;
+    }
+    
+    .education{
+        background-color: #8d9fa8;
+        margin-left: -16px;
+        padding-bottom: 20rem;
+        padding-top: 1rem;
+    }
+    
+    .social{
+        background-color: #f6b78d;
+        margin-left: -16px;
+        padding-bottom: 20rem;
+        padding-top: 1rem;
+    }
+
   }
