@@ -16,12 +16,9 @@ body{
 
 main{
     margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
-    padding-left: 1rem;
     max-width: 100%;
     max-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    overflow-y: auto;
+    display: block;
 }
 
 /*CSS nav bar*/
@@ -101,11 +98,13 @@ p {
 /*Mobile*/
 @media only screen and (max-width: 600px) {
     main{
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
-        padding-left: 0;
+        max-height: 100vh;
+        display: block;
+        margin: 0;
+        position: flex;
     }
+
     .navbar {
       bottom: 0; /*Placing the navbar on the bottom of the page*/
       width: 100%; /*You swap the height and the width and the height*/
@@ -122,15 +121,12 @@ p {
     .nav-link {
       justify-content: center;
     }
-  
-    main {
-      margin: 0;
-    }
     section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
     .about-me{
         /*display: flex;
         flex-direction: column;
@@ -140,14 +136,12 @@ p {
         height: 100vh;
         background-color: #EADFB4;
         display: inline block;
-        padding:1rem;
     }
     
     .projects{
         width: 100vw;
         height: 100vh;
         background-color: #b4c5d3;
-        padding:1rem;
         display: inline block;
     }
     
@@ -156,7 +150,6 @@ p {
         height: 100vh;
         background-color: #8d9fa8;
         display: inline block;
-        padding:1rem;
     }
     
     .social{
@@ -164,7 +157,6 @@ p {
         height: 100vh;
         background-color: #f6b78d;
         display: inline block;
-        padding:1rem;
     }
   }
 
@@ -219,6 +211,7 @@ p {
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
+        padding-right: 1rem;
     }
     
     .education{
@@ -226,6 +219,7 @@ p {
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
+        padding-right: 1rem;
     }
     
     .social{
@@ -233,6 +227,7 @@ p {
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
+        padding-right: 1rem;
     }
 
   }
