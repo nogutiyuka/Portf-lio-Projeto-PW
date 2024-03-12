@@ -106,6 +106,18 @@ footer a {
     padding: 10px;
 }
 
+.footer-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-navigation li{
+    padding: 20px 10px 15px;
+    border-color: azure;
+}
+
+
 /*Mobile*/
 @media only screen and (max-width: 600px) {
     main{
