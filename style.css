@@ -84,7 +84,7 @@ main{
 
 
 p {
-    text-indent: 3em;
+    text-indent: 0;
 }
 
 *, *::before, *::after {
