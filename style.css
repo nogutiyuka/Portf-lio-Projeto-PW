@@ -12,6 +12,8 @@ body{
     margin: 0;
     padding: 0;
     border-right: none;
+    background-color: var(--background-body, #fff);
+    color: var(--color-text, #000);
 }
 
 main{
@@ -21,6 +23,19 @@ main{
     display: block;
 }
 
+.menu-superior{
+    right: 50%;
+}
+
+.botao-tema{
+    align-items: right;
+    height: 2rem;
+    color:#000;
+    text-decoration: none;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
 /*CSS nav bar*/
 .navbar{
     position: fixed;
@@ -80,6 +95,8 @@ main{
 
 .about-me .image{
     border-radius: 50%;
+    bottom: 15;
+    right: 5;
 }
 
 
@@ -116,6 +133,7 @@ footer a {
     padding: 20px 10px 15px;
     border-color: azure;
 }
+
 
 
 /*Mobile*/
@@ -157,7 +175,7 @@ footer a {
         align-items: center;*/
         width: 100vw;
         height: 100vh;
-        background-color: #EADFB4;
+        background-color: var(--background-body, #fff);
         display: inline block;
         text-align: center;
     }
@@ -172,27 +190,27 @@ footer a {
     .projects{
         width: 100vw;
         height: 100vh;
-        background-color: #b4c5d3;
+        background-color: var(--background-body, #fff);
         display: inline block;
     }
     
     .education{
         width: 100vw;
         height: 100vh;
-        background-color: #8d9fa8;
+        background-color: var(--background-body, #fff);
         display: inline block;
     }
     
     .social{
         width: 100vw;
         height: 100vh;
-        background-color: #f6b78d;
+        background-color: var(--background-body, #fff);
         display: inline block;
     }
 
     footer{
         margin-top: 410%;
-        background-color: #f0df9a;
+        background-color: var(--background-body, #fff);
         color: black;
         bottom: 0;
         width: 100%;
@@ -244,7 +262,6 @@ footer a {
         align-items: center;*/
         width: 100%;
         height: 100vh;
-        background-color: #EADFB4;
         margin-left: -16px;
         padding-top: 1rem;
         padding-right: 1rem;
@@ -252,7 +269,7 @@ footer a {
     }
     
     .projects{
-        background-color: #b4c5d3;
+        background-color: var(--background-body, #fff);
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
@@ -260,7 +277,7 @@ footer a {
     }
     
     .education{
-        background-color: #8d9fa8;
+        background-color: var(--background-body, #fff);
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
@@ -268,7 +285,6 @@ footer a {
     }
     
     .social{
-        background-color: #f6b78d;
         margin-left: -16px;
         padding-bottom: 20rem;
         padding-top: 1rem;
@@ -277,15 +293,27 @@ footer a {
 
     footer{
         position: fixed;
-        background-color: #f0df9a;
+        background-color: var(--background-body, #fff);
         color: black;
         bottom: 0;
-        width: 100%;
+        width: 0%;
         box-sizing: border-box;
         text-align: center;
         font-size: medium;
         font-family: 'Poppins', sans-serif;
-        z-index: 1000;
+        z-index: 0;
     }
 
+  }
+
+  [data-tema='dark']{
+    --background-body: #202020;
+    --background-container: #2b2a2a;
+    --color-text: #fff;
+  }
+  
+  [data-tema='light']{
+    --background-body: #fff;
+    --background-container: #f0f0f0;
+    --color-text: #000;
   }
