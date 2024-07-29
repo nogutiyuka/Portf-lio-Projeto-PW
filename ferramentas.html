@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ferramentas Calculo de porcentagem">
+
+    <link rel="stylesheet" href="ferramentas.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Dev Tools</title>
+
+</head>
+
+<body class="devtools">
+    <main>
+        <section class="card">
+            <h1>Calculo de porcentagem</h1>
+            <form id="perc">
+                <div class="div-input">
+                    <label for="size">Porcentagem</label>
+                    <input type="number" class="text-input" id="size" name="size" required>
+                </div>
+                <div class="div-input">
+                    <label for="value">Valor</label>
+                    <input type="number" step="0.01" class="text-input" id="value" name="value" required>
+                </div>
+                <button class="submit-button" type="submit">Calcular</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <section class="card">
+            <h1>Busca de Séries</h1>
+            <form id="series-form">
+                <div class="div-input">
+                    <label for="series">Nome da Série</label>
+                    <input type="text" class="text-input" id="series" name="series" required>
+                </div>
+                <button class="submit-button" type="submit">Buscar Série</button>
+            </form>
+            <div id="series-result"></div>
+        </section>
+
+        <section class="card">
+            <h1>Conversor de Temperatura</h1>
+            <form id="temperature-form">
+                <div class="div-input">
+                    <label for="temperature">Temperatura</label>
+                    <input type="number" step="0.01" class="text-input" id="temperature" name="temperature" required>
+                </div>
+                <div class="div-input">
+                    <label for="from-unit">De</label>
+                    <select id="from-unit" class="text-input" name="from-unit">
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                    </select>
+                </div>
+                <div class="div-input">
+                    <label for="to-unit">Para</label>
+                    <select id="to-unit" class="text-input" name="to-unit">
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                    </select>
+                </div>
+                <button class="submit-button" type="submit">Converter</button>
+            </form>
+            <div id="temperature-result"></div>
+        </section>
+
+        <section class="card">
+            <h1>Calculadora de IMC</h1>
+            <form id="bmi-form">
+                <div class="div-input">
+                    <label for="weight">Peso (kg)</label>
+                    <input type="number" step="0.01" class="text-input" id="weight" name="weight" required>
+                </div>
+                <div class="div-input">
+                    <label for="height">Altura (m)</label>
+                    <input type="number" step="0.01" class="text-input" id="height" name="height" required>
+                </div>
+                <button class="submit-button" type="submit">Calcular IMC</button>
+            </form>
+            <div id="bmi-result"></div>
+        </section>
+
+    </main>
+    <script type="text/javascript" src="ferramentas.js"></script>
+</body>
+
+</html>
