@@ -1,312 +1,265 @@
-html{
-    scroll-behavior: smooth !important;
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-body);
 }
 
-:root{
-    font-size: large;
-    font-family: 'Open Sans'
+nav {
+	background-color: var(--background-body);
+	color: var(--color-text);
+	padding: 1em;
+	text-align: right;
 }
 
-body{
-    color: #333333;
-    margin: 0;
-    padding: 0;
-    border-right: none;
-    background-color: var(--background-body, #fff);
-    color: var(--color-text, #000);
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-main{
-    margin-left: 5rem; /*root em, a unit for measurement that represents the font size of the root element. In this case 16px*/
-    max-width: 100%;
-    max-height: 100vh;
-    display: block;
+nav li {
+	display: inline-block;
+	margin-left: 20px;
 }
 
-.menu-superior{
-    right: 50%;
+nav a {
+	color: var(--color-text);
+	text-decoration: none;
 }
 
-.botao-tema{
-    align-items: right;
-    height: 2rem;
-    color:#000;
-    text-decoration: none;
-    position: absolute;
-    right: 3%;
-    top: 2%;
-}
-/*CSS nav bar*/
-.navbar{
-    position: fixed;
-    background-color: #114232;
-    transition: width 200ms ease;
-    width: 100%;
+nav a:hover {
+	color: #ccc;
 }
 
-.navbar-nav{
-    list-style:none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.fa-solid fa-circle-half-stroke {
+	background-color: var(--background-body);
+	color: var(--color-text);
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
 }
 
-.nav-link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color:#DCE0D8;
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: 600ms;
+.fa-solid fa-circle-half-stroke {
+	background-color: var(--background-body);
 }
 
-.link-text {
-    display: none;
-}
-  
-.nav-link svg {
-    width: 2.5rem;
-    margin: 0 1.5rem;
+.mobile-menu-icon{
+	display: none;
 }
 
-.fa-primary{
-    color: #FCDC2A;
+.mobile-menu{
+	display: none;
 }
 
-.fa-secondary{
-    color: #FCDC2A;
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh - 3em);
+	position: relative;
+	padding-bottom: 50px;
 }
 
-.fa-primary, .fa-secondary{
-    transition: 600ms;
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
-.image{
-    width: 250px;
-    max-width: 500px;
-    height: 250px;
+.image {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	border-radius: 50%;
     object-fit: cover;
 }
 
-.about-me .image{
-    border-radius: 50%;
-    bottom: 15;
-    right: 5;
+.text {
+	width: 60%;
+	color: var(--color-text);
 }
 
+h1 {
+	margin-top: 0;
+}
 
 p {
-    text-indent: 0;
+	margin-bottom: 20px;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-* {
-    margin: 0;
-    padding: 0;
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: var(--background-body);
+	color: var(--color-text);
+	padding: 1em;
+	text-align: center;
+	clear: both;
 }
 
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-footer i {
-    font-size: xx-large;
+footer li {
+	display: inline-block;
+	margin-right: 20px;
 }
 
 footer a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 10px;
+	color: var(--color-text);
+	text-decoration: none;
 }
 
-.footer-navigation ul{
+footer a:hover {
+	color: #ccc;
+}
+
+.fab {
+	font-size: 24px;
+}
+
+.teste {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 8% 15%;
+    background-color: var(--background-color);
+  }
+
+  .teste h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+#repositorio-container{
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  .projects {
+	flex-basis: 25%; /* adjust the width of each article */
+	margin: 20px;
+	padding: 20px;
+	background-color: #f0f0f0; /* add a background color to each article */
+	border: 1px solid #ddd; /* add a border to each article */
+	border-radius: 10px; /* add a border radius to each article */
+	height: 300px;
+  }
+
+
+@media only screen and (min-width: 768px){
+	body{
+		overflow-y: hidden;
+	}
+	.container{
+		position: absolute;
+	}
 }
 
-.footer-navigation li{
-    padding: 20px 10px 15px;
-    border-color: azure;
-}
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-y: scroll;
+	  }
+	.container {
+		flex-direction: column;
+	}
 
+	.text {
+		width: 100%;
+	}
 
-
-/*Mobile*/
-@media only screen and (max-width: 600px) {
-    main{
-        width: 100%;
-        max-height: 100vh;
+	footer {
+		padding: 0.5em;
+	}
+	footer ul {
+		flex-direction: column;
+	}
+	footer li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.container{
+		position: fixed;
+	}
+	.mobile-menu{
+		background-color: var(--background-body);
+		float: right;
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		text-decoration: none;
+	}
+	.nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+		justify-content: center;
+		text-align: center;
+		text-decoration: none !important;
+    }
+    .mobile-menu-icon {
         display: block;
-        margin: 0;
-        position: flex;
     }
-
-    .navbar {
-      bottom: 0; /*Placing the navbar on the bottom of the page*/
-      width: 100%; /*You swap the height and the width and the height*/
-      height: 5rem;
-      position: flex !important;
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+		text-decoration: none;
+		cursor: pointer;
     }
-  
-    .navbar-nav {
-      flex-direction: row;
-      justify-content: center;
-      display: inline block;
-    }
-  
-    .nav-link {
-      justify-content: center;
-    }
-    section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-me{
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;*/
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background-body, #fff);
-        display: inline block;
-        text-align: center;
-    }
-
-    p{
-        text-indent: 0;
-        text-align: center;
-        margin: 0;
-        padding: 10px;
-    }
-    
-    .projects{
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background-body, #fff);
-        display: inline block;
-    }
-    
-    .education{
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background-body, #fff);
-        display: inline block;
-    }
-    
-    .social{
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background-body, #fff);
-        display: inline block;
-    }
-
-    footer{
-        margin-top: 410%;
-        background-color: var(--background-body, #fff);
-        color: black;
-        bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-        font-size: medium;
-        font-family: 'Poppins', sans-serif;
-        z-index: 1000;
-    }
-  }
-
-/*Web*/
-  @media only screen and (min-width: 600px) {
-    .navbar {
-      top: 0;
-      width: 5rem;
-      height: 100vh;
-    }
-    .navbar-nav{
+    .mobile-menu ul {
         display: flex;
-    }
-    
-    .navbar:hover {
-      width: 16rem;
-    }
-  
-    .navbar:hover .link-text {
-      display: inline;
-    }
-
-    .nav-link:hover{
-        filter: grayscale(0%) opacity(1);
-        background: #677779;
-        color: #ececec;
-        width: 16rem;
-    }
-    section{ /*MUDAR PARA O NOME DAS CLASSES DAS SECTIONS SE NECESSÁRIO!*/
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display:  block;
-    }
-    .about-me{
-        /*display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;*/
-        width: 100%;
-        height: 100vh;
-        margin-left: -16px;
-        padding-top: 1rem;
-        padding-right: 1rem;
-        
-    }
-    
-    .projects{
-        background-color: var(--background-body, #fff);
-        margin-left: -16px;
-        padding-bottom: 20rem;
-        padding-top: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .education{
-        background-color: var(--background-body, #fff);
-        margin-left: -16px;
-        padding-bottom: 20rem;
-        padding-top: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .social{
-        margin-left: -16px;
-        padding-bottom: 20rem;
-        padding-top: 1rem;
-        padding-right: 1rem;
-    }
-
-    footer{
-        position: fixed;
-        background-color: var(--background-body, #fff);
-        color: black;
-        bottom: 0;
-        width: 0%;
-        box-sizing: border-box;
         text-align: center;
-        font-size: medium;
-        font-family: 'Poppins', sans-serif;
-        z-index: 0;
+        padding-bottom: 1rem;
+		text-decoration: none;
     }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+		color: var(--color-text);
+    }
+	.nav-link{
+		text-decoration: none !important;
+		color: var(--color-text);
+	}
 
-  }
+	.fa-solid fa-circle-half-stroke{
+		background-color: var(--background-body);
+		color: var(--color-text);
+		border: none;
+		cursor: pointer;
+		text-decoration: none;
+	}
+    .open {
+        display: block;
+    }
+	.teste {
+        flex-direction: column;
+    }
+    .projects {
+        flex-basis: 100%; /* adjust the width of each article to 100% */
+        margin: 20px 0; /* adjust the margin to have some space between articles */
+    }
+}
 
-  [data-tema='dark']{
+
+[data-tema='dark']{
     --background-body: #202020;
     --background-container: #2b2a2a;
     --color-text: #fff;
